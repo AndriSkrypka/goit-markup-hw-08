@@ -1,0 +1,87 @@
+/* =================== СЕКЦІЯ НАША КОМАНДА ========================= */
+
+/* Фон секції наша команда */
+.section-title-team {
+  background: var(--background-button-color);
+}
+
+.employees-list {
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.employees-list-item {
+  text-align: center;
+  background: var(--one-color);
+  background-color: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 354px;
+    margin: 15px;
+  }
+
+  @include mq(desktop) {
+    width: 270px;
+  }
+}
+
+.div-list-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.employees-list-name {
+  margin: auto;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+.employees-list-position {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color2);
+}
+
+.team-list-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.member-team-icons {
+  margin-right: 10px;
+}
+
+.member-team-icons:last-child {
+  margin-right: 0px;
+}
+
+/* =================== /СЕКЦІЯ НАША КОМАНДА ========================= */

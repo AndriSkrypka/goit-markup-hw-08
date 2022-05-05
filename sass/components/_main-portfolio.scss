@@ -1,0 +1,192 @@
+/* ================= MAIN PORFOLIO ================= */
+
+// .portfolio {
+//   // padding-top: 94px;
+//   // padding-bottom: 94px;
+// }
+
+// .section-list-button {
+//   margin-top: 0;
+//   padding-left: 0;
+//   margin-right: -8px;
+// }
+
+.div-portfolio-list {
+  margin: -8px -4px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+  @include mq(tablet) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.section-list-btn {
+  margin: 8px 4px;
+}
+
+.modal-button {
+  padding: 6px 22px;
+  margin: 0 auto;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--background-button-color);
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--one-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// .modal-button:hover,
+// .modal-button:focus {
+//     background-color: var(--accent-color);
+//     color: var(--one-color);
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+//         0px 1px 2px rgba(0, 0, 0, 0.08),
+//         0px 2px 2px rgba(0, 0, 0, 0.12);
+// }
+
+.modal-button {
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list {
+  background: var(--one-color);
+}
+
+.portfolio-list {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employees-list-ptojekt {
+  display: flex;
+
+  flex-basis: 100%;
+
+  @include mq(tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include mq(desktop) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+// .employees-list-ptojekt:nth-child(3n) {
+//   margin-right: 0;
+// }
+
+// .employees-list-ptojekt:nth-last-child(-n + 3) {
+//   margin-bottom: 0;
+// }
+
+.hover-link {
+  flex-direction: column;
+  display: flex;
+}
+
+.hover-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+// .hover-link:hover,
+// .hover-link:focus {
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//     1px 4px 6px rgba(0, 0, 0, 0.16);
+// }
+
+.employees-deskr {
+  position: relative;
+  overflow: hidden;
+}
+
+.employees-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 63px 24px;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.56;
+  color: var(--background-button-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+
+  @include mq(mobile) {
+    font-size: 18px;
+  }
+}
+
+.hover-link:hover .employees-text {
+  transform: translateY(0);
+  opacity: 0.9;
+  transition: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.div-list-work {
+  flex-grow: 1;
+  padding: 20px 24px;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
+
+.employees-list-name-portfolio {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+/* Список в портфоліо під карточками */
+.employees-list-position-div {
+  // width: 322px;
+
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color2);
+}
+
+/* ================= /MAIN PORFOLIO ================= */

@@ -1,0 +1,69 @@
+/* =================== СЕКЦІЯ ПОСТОЯННІ КЛІЄНТИ ============== */
+
+.icon-client-list {
+  display: flex;
+  gap: 30px;
+
+  @include mq(mobile-only) {
+    flex-wrap: wrap;
+  }
+  @include mq(tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon-client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   width: 1px;
+  height: 92px;
+  border: 1px solid var(--color-icons);
+  border-radius: 4px;
+  fill: var(--color-icons);
+}
+
+.icon-client-link {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.icon-client-item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @include mq(tablet) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @include mq(desktop) {
+  }
+}
+
+.icon-client-item:last-child {
+  margin-right: 0px;
+}
+
+.icon-client-link:hover .icon-client,
+.icon-client-link:focus .icon-client {
+  fill: var(--accent-color);
+}
+
+.icon-client {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =================== /СЕКЦІЯ ПОСТОЯННІ КЛІЄНТИ ============== */

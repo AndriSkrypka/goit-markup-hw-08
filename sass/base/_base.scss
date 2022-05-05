@@ -1,0 +1,58 @@
+body {
+  font-family: var(--main-font);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.container {
+  // outline: 1px solid red;
+
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(mobile) {
+    width: 480px;
+  }
+
+  @include mq(tablet) {
+    width: 768px;
+  }
+
+  @include mq(desktop) {
+    width: 1200px;
+  }
+}
+
+/* Падінги для секцій  */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+/* падінг для секції ЧЕМ МИ ЗАНІМАЄМСЯ */
+.section__title {
+  padding-top: 0;
+}
+
+/* Стилі для секції постоянні клієнти і чим ми займаємось */
+.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+}

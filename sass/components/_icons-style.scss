@@ -1,0 +1,44 @@
+/* ===================== СТИЛІ ДЛЯ ПОСИЛАНЬ ІКОНОК ЗАГАЛЬНІ ========== */
+.link-team-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--one-color);
+}
+
+.link-team-icons {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+/* ========================== /СТИЛІ ДЛЯ ПОСИЛАНЬ ІКОНОК============= */
+
+/* =============== СТИЛІ ДЛЯ ІКОНОК ЗАГАЛЬНІ ================== */
+.icons-team {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--color-icons);
+
+  .link-team-icons:hover &,
+  .link-team-icons:focus & {
+    fill: var(--one-color);
+  }
+}
+
+.icon-team {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =============== /СТИЛІ ДЛЯ ІКОНОК ЗАГАЛЬНІ ================== */
